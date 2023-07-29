@@ -475,8 +475,8 @@ def MukeshRobot_Main_Callback(update: Update, context: CallbackContext):
 /htag   - sᴘᴇᴄɪᴀʟ ʜᴀʀʏᴀᴀɴᴀᴠɪ ᴛᴀɢɢᴇʀ
 /entag - sᴘᴇᴄɪᴀʟ ᴇɴɢʟɪsʜ ᴛᴀɢɢᴇʀ
 
-||ɪғ ʏᴏᴜ ғᴀᴄᴇᴅ ᴀɴʏ ᴘʀᴏʙʟᴇᴍ ᴛᴏ ᴘᴇʀғᴏʀᴍ  ᴊᴜsᴛ ᴄʟɪᴄᴋ ʀᴇᴘᴏʀᴛ ʙᴜᴛᴛᴏɴ||
-||[ʀᴇᴘᴏʀᴛs](https://t.me/ARCH_SUPPORTS)||
+ɪғ ʏᴏᴜ ғᴀᴄᴇᴅ ᴀɴʏ ᴘʀᴏʙʟᴇᴍ ᴛᴏ ᴘᴇʀғᴏʀᴍ  ᴊᴜsᴛ ᴄʟɪᴄᴋ ʀᴇᴘᴏʀᴛ ʙᴜᴛᴛᴏɴ
+[ʀᴇᴘᴏʀᴛs](https://t.me/ARCH_SUPPORTS)
 """,parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -487,11 +487,15 @@ def MukeshRobot_Main_Callback(update: Update, context: CallbackContext):
                 ]
             ),
             )
-    elif query.data=="mukesh_back":
+    elif query.data=="expert_help":
         query.message.edit_text("""ᴠᴏɪᴄᴇ ᴛᴀɢɢᴇʀ
+        
 /allvoice - ʀᴀɴᴅᴏᴍ ᴠᴏɪᴄᴇs
+
 /nvoice - ᴀʟʟ ɢᴏᴏᴅ ɴɪɢʜᴛ ᴠᴏɪᴄᴇ ᴍᴇssᴀɢᴇ ᴜsᴇʀ ᴛᴀɢᴇʀ
+
 /gmvoice  - ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ ᴠᴏɪᴄᴇ ᴜsᴇʀ ᴛᴀɢɢᴇʀ
+
 .""",parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
