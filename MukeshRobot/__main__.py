@@ -75,6 +75,7 @@ PM_START_TEX = """
 
 
 PM_START_TEXT = """ 
+────「 [{}](https://telegra.ph/file/1857ed2e339642e1be3a9.jpg) 」────
 *ʜᴜɪ * {} , 🖤
 
 *💮ɪᴍ ⏤͟͟͞ ♡︎ ˹˼🫧🕊️⃝ᴛʀɪsʜᴀ ᴀᴡᴇsᴏᴍᴇ ᴛᴇʟᴇɢʀᴀᴍ ʙᴏᴛ ғᴏʀ*
