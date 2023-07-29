@@ -97,6 +97,10 @@ buttons = [
         InlineKeyboardButton(text="ʜᴇʟᴩ & ᴄᴏᴍᴍᴀɴᴅs", callback_data="Main_help"),
     ],
     [
+        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="mukesh_"),
+        InlineKeyboardButton(text="sᴏᴜʀᴄᴇ", callback_data="source_"),
+    ], 
+    [
         InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url=f"tg://user?id={OWNER_ID}"),
         InlineKeyboardButton(text="sᴜᴩᴩᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),        
     ],
