@@ -75,14 +75,15 @@ PM_START_TEX = """
 
 
 PM_START_TEXT = """ 
-────「 [{}](https://telegra.ph/file/1857ed2e339642e1be3a9.jpg) 」────
-*ʜᴜɪ * {} , 🖤
+ʜᴇʏ💌────「 [{}](https://telegra.ph/file/1857ed2e339642e1be3a9.jpg) 」────
+*ɪᴛs* {}  🖤ᴀ ᴀᴡᴇsᴏᴍᴇ ᴛᴇʟᴇɢʀᴀᴍ ʙᴏᴛ ғᴏʀ*
 
-*💮ɪᴍ ⏤͟͟͞ ♡︎ ˹˼🫧🕊️⃝ᴛʀɪsʜᴀ ᴀᴡᴇsᴏᴍᴇ ᴛᴇʟᴇɢʀᴀᴍ ʙᴏᴛ ғᴏʀ*
+
 ⏤͟͟ ♡︎ ɪᴍ ᴘᴏᴡᴇʀғᴜʟ ɢʀᴏᴜᴘ&ᴄʜᴀɴɴᴇʟ ᴍᴜsɪᴄ ᴘʟᴀʏᴇʀ
 ⏤͟͟ ♡︎ ᴘᴏᴡᴇʀғᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ
 ⏤͟͟͞ ♡︎ ᴀʟsᴏ ɪᴍ sᴘᴇᴄɪᴀʟ ᴀᴜᴛᴏɢᴇɴᴀʀᴇᴛᴇᴅ  ᴠᴏɪᴄᴇ&ᴛᴇxᴛ ᴛᴀɢɢᴇʀ
 
+ᴄʟɪᴄᴋ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴ ғᴏʀ ᴋɴᴏᴡ ᴍᴏʀᴇ
 """
 
 buttons = [
@@ -211,6 +212,8 @@ def start(update: Update, context: CallbackContext):
                 PM_START_TEX.format(usr.first_name), parse_mode=ParseMode.MARKDOWN
             )
             time.sleep(0.4)
+            lol.edit_text("❤")
+            time.sleep(0.3)
             lol.edit_text("⏤͟͟͞ ♡︎ʟᴏᴀᴅɪɴɢ....")
             time.sleep(0.5)
             lol.edit_text("⏤͟͟͞ ♡︎ʟᴏᴀᴅɪɴɢ.....")
@@ -383,7 +386,7 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
      ],
                     [
                         InlineKeyboardButton(
-                            text="🚩sᴜᴩᴩᴏʀᴛ", callback_data="mukesh_support"
+                            text="sᴜᴩᴩᴏʀᴛ", callback_data="mukesh_support"
                         ),
                         InlineKeyboardButton(
                             text="ᴄᴏᴍᴍᴀɴᴅs 💁", callback_data="Main_help"
@@ -391,10 +394,10 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
                     ],
                     [
                         InlineKeyboardButton(
-                            text="👨‍💻ᴅᴇᴠᴇʟᴏᴩᴇʀ", url=f"tg://user?id={OWNER_ID}"
+                            text="ᴅᴇᴠᴇʟᴏᴩᴇʀ", url=f"tg://user?id={OWNER_ID}"
                         ),
                         InlineKeyboardButton(
-                            text="🥀sᴏᴜʀᴄᴇ",
+                            text="sᴏᴜʀᴄᴇ",
                             callback_data="source_",
                         ),
                     ],
@@ -456,11 +459,11 @@ def MukeshRobot_Main_Callback(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(text="⚙️ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ⚙️", callback_data="help_back"),
-                        InlineKeyboardButton(text="💫 ᴍᴜsɪᴄ 💫", callback_data="Music_")
+                        InlineKeyboardButton(text="🎧 ᴍᴜsɪᴄ 🎧", callback_data="Music_")
                     ],
                     [
-                        InlineKeyboardButton(text="ᴛᴇxᴛ ᴛᴀɢɢᴇʀ", callback_data="basic_help"),
-                        InlineKeyboardButton(text="ᴠᴏɪᴄᴇ ᴛᴀɢɢᴇʀ", callback_data="expert_help")
+                        InlineKeyboardButton(text="💌 ᴛᴇxᴛ ᴛᴀɢɢᴇʀ 💌", callback_data="basic_help"),
+                        InlineKeyboardButton(text="🎤 ᴠᴏɪᴄᴇ ᴛᴀɢɢᴇʀ 🎤", callback_data="expert_help")
                     ],
                     [InlineKeyboardButton(text="• Hᴏᴍᴇ •", callback_data="mukesh_back")]
                 ]
@@ -574,12 +577,9 @@ def Music_about_callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-        InlineKeyboardButton(text="ʜᴏᴍᴇ", callback_data="mukesh_back"),
-        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="mukesh_"),
-        InlineKeyboardButton(text="sᴏᴜʀᴄᴇ", callback_data="source_"),
-        InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url=f"tg://user?id={OWNER_ID}"),
-        InlineKeyboardButton(text="ᴍᴀɪɴ ᴍᴇɴᴜ", callback_data="Main_help"),
-     ],
+                        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="mukesh_"),
+                        InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url=f"tg://user?id={OWNER_ID}"),
+                    ],
                     [
                         InlineKeyboardButton(
                             text="ᴀᴅᴍɪɴ", callback_data="Music_admin"
@@ -589,7 +589,7 @@ def Music_about_callback(update: Update, context: CallbackContext):
                         ),
                     ],
                     [
-                        InlineKeyboardButton(text="⍟ ʙᴏᴛ ⍟", callback_data="Music_bot"),
+                        InlineKeyboardButton(text="ʙᴏᴛ", callback_data="Music_bot"),
                         InlineKeyboardButton(
                             text="ᴇxᴛʀᴀ",
                             callback_data="Music_extra",
