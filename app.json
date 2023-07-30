@@ -55,33 +55,33 @@
     "CASH_API_KEY": {
         " description": " Get your API key from https://www.alphavantage.co/support/#api-key",
         "required": false,
-        "value": ""
+        "value": "D0ZCZ67KL8OTL0PY"
     },
     "TIME_API_KEY": {
         "description": " Get your API key from https://timezonedb.com/api",
         "required": false,
-        "value": ""
+        "value": "5LB4TAKPEKZ0"
     },
     "CHATBOT_API": {
         "description":"Get your API key from @FallenChat_Bot using /token",
         "required": false,
-        "value": ""
+        "value": "5218610039-fallen-lrqj44jqrl"
     },
         
     "OWNER_ID": {
        "description": "Your user ID as an integer.",
        "required": true,
-       "value": ""
+       "value": "5218610039"
     },
     "START_IMG": {
        "description": "Telegraph link of the image which will be shown at start command.",
        "required": true,
-       "value": ""
+       "value": "https://telegra.ph/file/1857ed2e339642e1be3a9.jpg"
     },
     "SUPPORT_CHAT": {
        "description": "Your Telegram support group chat username where your users will go and bother you with shit Example - The_support_chat.",
        "required": true,
-       "value": ""
+       "value": "arch_supports"
     },
     "TOKEN": {
        "description": "Get bot token from @BotFather on TG",
