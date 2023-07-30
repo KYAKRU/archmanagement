@@ -546,8 +546,6 @@ def Source_about_callback(update: Update, context: CallbackContext):
             timeout=60,
             disable_web_page_preview=True,
         )
-
-        
 def Music_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "Music_":
@@ -559,17 +557,24 @@ def Music_about_callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
+        InlineKeyboardButton(text="🏡", callback_data="mukesh_back"),
+        InlineKeyboardButton(text="🛡️", callback_data="mukesh_"),
+        InlineKeyboardButton(text="💳", callback_data="source_"),
+        InlineKeyboardButton(text="🧑‍💻", url=f"tg://user?id={OWNER_ID}"),
+        InlineKeyboardButton(text="🖥️", callback_data="Main_help"),
+     ],
+                    [
                         InlineKeyboardButton(
-                            text="ᴀᴅᴍɪɴ", callback_data="Music_admin"
+                            text="⍟ ᴀᴅᴍɪɴ ⍟", callback_data="Music_admin"
                         ),
                         InlineKeyboardButton(
-                            text="ᴘʟᴀʏ", callback_data="Music_play"
+                            text="⍟ ᴘʟᴀʏ ⍟", callback_data="Music_play"
                         ),
                     ],
                     [
-                        InlineKeyboardButton(text="ʙᴏᴛ", callback_data="Music_bot"),
+                        InlineKeyboardButton(text="⍟ ʙᴏᴛ ⍟", callback_data="Music_bot"),
                         InlineKeyboardButton(
-                            text="ᴇxᴛʀᴀ",
+                            text="⍟ ᴇxᴛʀᴀ ⍟",
                             callback_data="Music_extra",
                         ),
                     ],
@@ -579,6 +584,9 @@ def Music_about_callback(update: Update, context: CallbackContext):
                 ]
             ),
         )
+        
+def Music_about_callback(update: Update, context: CallbackContext):
+    quer
     elif query.data == "Music_admin":
         query.message.edit_text(f"*» ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅꜱ «*"
             f"""
