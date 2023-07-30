@@ -586,8 +586,8 @@ def Music_about_callback(update: Update, context: CallbackContext):
         )
         
 def Music_about_callback(update: Update, context: CallbackContext):
-    quer
-    elif query.data == "Music_admin":
+    query = update.callback_query
+    if query.data == "Music_admin":
         query.message.edit_text(f"*» ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅꜱ «*"
             f"""
 ᴊᴜsᴛ ᴀᴅᴅ *ᴄ* ɪɴ ᴛʜᴇ sᴛᴀʀᴛɪɴɢ ᴏғ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅs ᴛᴏ ᴜsᴇ ᴛʜᴇᴍ ғᴏʀ ᴄʜᴀɴɴᴇʟ.
