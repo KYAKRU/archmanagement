@@ -465,7 +465,7 @@ def MukeshRobot_Main_Callback(update: Update, context: CallbackContext):
         ],
        [InlineKeyboardButton(text="• ʙᴀᴄᴋ •", callback_data="Main_help")]
        ]
-        )
+        ))
     elif query.data=="basic_help":
         query.message.edit_caption("""ɴᴏʀᴍᴀʟ ᴛᴀɢɢᴇʀ ᴄᴏᴍᴍᴀɴᴅ
 • /tagall - ᴇxᴀᴍᴘʟᴇ `/tagall  ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ` 
