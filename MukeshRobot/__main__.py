@@ -443,10 +443,10 @@ def MukeshRobot_Main_Callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="⚙️ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ⚙️", callback_data="help_back"),
-                        InlineKeyboardButton(text="🎧 ᴍᴜsɪᴄ 🎧", callback_data="Music_")
+                        InlineKeyboardButton(text="⚙️ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ⚙️", callback_data="help_back"),    
                     ],
                     [
+                        InlineKeyboardButton(text="🎧 ᴍᴜsɪᴄ 🎧", callback_data="Music_"),
                         InlineKeyboardButton(text="ᴛᴀɢɢᴇʀ ", callback_data="tagger_help")
             
                     ],
