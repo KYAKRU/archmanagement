@@ -216,12 +216,14 @@ def start(update: Update, context: CallbackContext):
                 PM_START_TEX.format(usr.first_name), parse_mode=ParseMode.MARKDOWN
             )
             time.sleep(0.4)
-            lol.edit_text("❤")
+            lol.edit_text("✨")
             time.sleep(0.5)
-            lol.edit_text("⏤͟͟͞ ♡︎ʟᴏᴀᴅɪɴɢ.....")
+            lol.edit_text("💌")
             time.sleep(0.3)
-            lol.edit_text("ʟᴏᴀᴅᴇᴅ............")
+            lol.edit_text("❤")
             time.sleep(0.4)
+            lol.edit_text("sᴛᴀʀᴛᴇᴅ..")
+            time.sleep(0.3)
             lol.delete()
             
             update.effective_message.reply_photo(START_IMG,PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME),
@@ -387,7 +389,7 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
                             text="sᴜᴩᴩᴏʀᴛ", callback_data="mukesh_support"
                         ),
                         InlineKeyboardButton(
-                            text="ᴄᴏᴍᴍᴀɴᴅs 💁", callback_data="Main_help"
+                            text="ᴄᴏᴍᴍᴀɴᴅs", callback_data="Main_help"
                         )
                     ],
                     [
@@ -408,10 +410,10 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="🏡 sᴜᴩᴩᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"
+                            text="sᴜᴩᴩᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"
                         ),
                         InlineKeyboardButton(
-                            text="ᴜᴩᴅᴀᴛᴇs 🍷", url=f"https://t.me/{SUPPORT_CHAT}"
+                            text="ᴜᴩᴅᴀᴛᴇs", url=f"https://t.me/{SUPPORT_CHAT}"
                         ),
                     ],
                     [
@@ -447,7 +449,7 @@ def MukeshRobot_Main_Callback(update: Update, context: CallbackContext):
                     ],
                     [
                         InlineKeyboardButton(text="🎧 ᴍᴜsɪᴄ 🎧", callback_data="Music_"),
-                        InlineKeyboardButton(text="ᴛᴀɢɢᴇʀ ", callback_data="tagger_help")
+                        InlineKeyboardButton(text="⚡ ᴛᴀɢɢᴇʀ ⚡", callback_data="tagger_help")
             
                     ],
                     [InlineKeyboardButton(text="• Hᴏᴍᴇ •", callback_data="mukesh_back")]
@@ -457,11 +459,11 @@ def MukeshRobot_Main_Callback(update: Update, context: CallbackContext):
     elif query.data=="tagger_help":
         query.message.edit_caption("""⚡️ ᴛᴀɢɢᴇʀ ʜᴇʟᴘ ᴍᴇɴᴜ. ⚡️
 
- ✪ ᴄʜᴏᴏsᴇ ᴀ ᴛᴀɢɢᴇʀ ʜᴇʟᴘ sᴇᴄᴛɪᴏɴ ғʀᴏᴍ ʙᴇʟᴏᴡ ᴏᴘᴛɪᴏɴs.""",
+   ᴄʜᴏᴏsᴇ ᴀ ᴛᴀɢɢᴇʀ ʜᴇʟᴘ sᴇᴄᴛɪᴏɴ ғʀᴏᴍ ʙᴇʟᴏᴡ ᴏᴘᴛɪᴏɴs.""",
         reply_markup=InlineKeyboardMarkup(
        [ [
-            InlineKeyboardButton(text="💌 ᴛᴇxᴛ ᴛᴀɢɢᴇʀ 💌", callback_data="basic_help"),
-            InlineKeyboardButton(text="🎤 ᴠᴏɪᴄᴇ ᴛᴀɢɢᴇʀ 🎤", callback_data="expert_help")
+            InlineKeyboardButton(text="ᴛᴇxᴛ", callback_data="basic_help"),
+            InlineKeyboardButton(text="ᴠᴏɪᴄᴇ", callback_data="expert_help")
         ],
        [InlineKeyboardButton(text="• ʙᴀᴄᴋ •", callback_data="Main_help")]
        ]
@@ -508,31 +510,27 @@ def MukeshRobot_Main_Callback(update: Update, context: CallbackContext):
             ),
             )                                        
   
-
 def Source_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "source_":
-        query.message.edit_caption(f"""
-||ᴀ sᴘᴇᴄɪᴀʟ ɢʀᴏᴜᴘ ᴍᴜsɪᴄ ᴛᴀɢɢᴇʀ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ||
-||ᴊᴏɪɴ ᴏᴜʀ sᴜᴘᴘᴏʀᴛ [ʀᴇᴘᴏ](https://t.me/archbots)||
-""",
+        video_url = "https://telegra.ph/file/b2164d324dfa4be3f41eb.mp4"
+        query.message.reply_video(
+            video=video_url,
             parse_mode=ParseMode.MARKDOWN,
-            
             reply_markup=InlineKeyboardMarkup(
-                [[
-        InlineKeyboardButton(text="sᴏᴜʀᴄᴇ", url=f"tg://user?id={OWNER_ID}"),
-                ],[InlineKeyboardButton(text="◁", callback_data="source_back")]]
+                [InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="source_back")]]
             ),
         )
+
     elif query.data == "source_back":
         first_name = update.effective_user.first_name
         query.message.edit_caption(
-            PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME,sql.num_users(),sql.num_chats()),
+            PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME, sql.num_users(), sql.num_chats()),
             reply_markup=InlineKeyboardMarkup(buttons),
             parse_mode=ParseMode.MARKDOWN,
             timeout=60,
-            
         )
+
 def Music_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "Music_":
@@ -544,16 +542,16 @@ def Music_about_callback(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="⍟ ᴀᴅᴍɪɴ ⍟", callback_data="Music_admin"
+                            text="ᴀᴅᴍɪɴ", callback_data="Music_admin"
                         ),
                         InlineKeyboardButton(
-                            text="⍟ ᴘʟᴀʏ ⍟", callback_data="Music_play"
+                            text="ᴘʟᴀʏ", callback_data="Music_play"
                         ),
                     ],
                     [
                         InlineKeyboardButton(text="⍟ ʙᴏᴛ ⍟", callback_data="Music_bot"),
                         InlineKeyboardButton(
-                            text="⍟ ᴇxᴛʀᴀ ⍟",
+                            text="ᴇxᴛʀᴀ",
                             callback_data="Music_extra",
                         ),
                     ],
