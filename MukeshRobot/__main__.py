@@ -540,7 +540,6 @@ def Music_about_callback(update: Update, context: CallbackContext):
  ʜᴇʀᴇ ɪꜱ ʜᴇʟᴘ ᴍᴇɴᴜ ꜰᴏʀ ᴍᴜꜱɪᴄ 
 """,
             parse_mode=ParseMode.MARKDOWN,
-            
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -565,9 +564,7 @@ def Music_about_callback(update: Update, context: CallbackContext):
             ),
         )
         
-def Music_about_callback(update: Update, context: CallbackContext):
-    query = update.callback_query
-    if query.data == "Music_admin":
+    eilf query.data == "Music_admin":
         query.message.edit_caption(f"*» ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅꜱ «*"
             f"""
 ᴊᴜsᴛ ᴀᴅᴅ *ᴄ* ɪɴ ᴛʜᴇ sᴛᴀʀᴛɪɴɢ ᴏғ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅs ᴛᴏ ᴜsᴇ ᴛʜᴇᴍ ғᴏʀ ᴄʜᴀɴɴᴇʟ.
