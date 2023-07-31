@@ -388,11 +388,11 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
                         ),
                         InlineKeyboardButton(
                             text="ᴄᴏᴍᴍᴀɴᴅs 💁", callback_data="Main_help"
-                        ),
+                        )
                     ],
                     [
                         InlineKeyboardButton(
-                            text="ᴅᴇᴠᴇʟᴏᴩᴇʀ", url=f"tg://user?id={OWNER_ID}"
+                            text="ᴅᴇᴠᴇʟᴏᴩᴇʀ", url=f"tg://user?id={OWNER_ID}")
                     ],
                     [
                         InlineKeyboardButton(text="◁", callback_data="mukesh_back"),
@@ -447,12 +447,24 @@ def MukeshRobot_Main_Callback(update: Update, context: CallbackContext):
                         InlineKeyboardButton(text="🎧 ᴍᴜsɪᴄ 🎧", callback_data="Music_")
                     ],
                     [
-                        InlineKeyboardButton(text="💌 ᴛᴇxᴛ ᴛᴀɢɢᴇʀ 💌", callback_data="basic_help"),
-                        InlineKeyboardButton(text="🎤 ᴠᴏɪᴄᴇ ᴛᴀɢɢᴇʀ 🎤", callback_data="expert_help")
+                        InlineKeyboardButton(text="ᴛᴀɢɢᴇʀ ", callback_data="tagger_help")
+            
                     ],
                     [InlineKeyboardButton(text="• Hᴏᴍᴇ •", callback_data="mukesh_back")]
                 ]
             ),
+        )
+    elif query.data=="tagger_help":
+        query.message.edit_caption("""⚡️ ᴛᴀɢɢᴇʀ ʜᴇʟᴘ ᴍᴇɴᴜ. ⚡️
+
+ ✪ ᴄʜᴏᴏsᴇ ᴀ ᴛᴀɢɢᴇʀ ʜᴇʟᴘ sᴇᴄᴛɪᴏɴ ғʀᴏᴍ ʙᴇʟᴏᴡ ᴏᴘᴛɪᴏɴs.""",
+        reply_markup=InlineKeyboardMarkup(
+       [ [
+            InlineKeyboardButton(text="💌 ᴛᴇxᴛ ᴛᴀɢɢᴇʀ 💌", callback_data="basic_help"),
+            InlineKeyboardButton(text="🎤 ᴠᴏɪᴄᴇ ᴛᴀɢɢᴇʀ 🎤", callback_data="expert_help")
+        ],
+       [InlineKeyboardButton(text="• ʙᴀᴄᴋ •", callback_data="Main_help")]
+       ]
         )
     elif query.data=="basic_help":
         query.message.edit_caption("""ɴᴏʀᴍᴀʟ ᴛᴀɢɢᴇʀ ᴄᴏᴍᴍᴀɴᴅ
@@ -471,7 +483,7 @@ def MukeshRobot_Main_Callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="• ʙᴀᴄᴋ •", callback_data="Main_help"),InlineKeyboardButton(text="• sᴜᴘᴘᴏʀᴛ •", callback_data="mukesh_support")
+                        InlineKeyboardButton(text="• ʙᴀᴄᴋ •", callback_data="tagger_help"),InlineKeyboardButton(text="• sᴜᴘᴘᴏʀᴛ •", callback_data="mukesh_support")
                     ]
                 ]
             ),
@@ -490,7 +502,7 @@ def MukeshRobot_Main_Callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="• ʙᴀᴄᴋ •", callback_data="Main_help"),InlineKeyboardButton(text="• sᴜᴘᴘᴏʀᴛ •", callback_data="mukesh_support")
+                        InlineKeyboardButton(text="• ʙᴀᴄᴋ •", callback_data="tagger_help"),InlineKeyboardButton(text="• sᴜᴘᴘᴏʀᴛ •", callback_data="mukesh_support")
                     ]
                 ]
             ),
