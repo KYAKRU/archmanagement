@@ -80,7 +80,7 @@ async def cute(e):
     user_name = e.sender.first_name
     mention = f"[{user_name}](tg://user?id={str(user_id)})"
     mm = random.randint(1, 100)
-    CUTE = f"**🤩** {mention} {mm}**% ʙᴇᴀᴜᴛɪғᴜʟ**"
+    BEAUTIFUL = f"**🤩** {mention} {mm}**% ʙᴇᴀᴜᴛɪғᴜʟ**"
     await e.reply(BEAUTIFUL, buttons=BUTTON, file=BEAUTIFULL)
 
 __help__ = """
