@@ -76,7 +76,7 @@ PM_START_TEX = """
 
 PM_START_TEXT = """ 
  {}
-*ɪᴛs* {}  🖤ᴀ ᴀᴡᴇsᴏᴍᴇ ᴛᴇʟᴇɢʀᴀᴍ ʙᴏᴛ ғᴏʀ*
+*ɪᴛs* {}  🖤ᴀ ᴀᴡᴇsᴏᴍᴇ ᴛᴇʟᴇɢʀᴀᴍ ʙᴏᴛ ғᴏʀ
 
 
 ⏤͟͟ ♡︎ ɪᴍ ᴘᴏᴡᴇʀғᴜʟ ɢʀᴏᴜᴘ&ᴄʜᴀɴɴᴇʟ ᴍᴜsɪᴄ ᴘʟᴀʏᴇʀ
@@ -297,6 +297,7 @@ def error_callback(update: Update, context: CallbackContext):
         # handle all other telegram related errors
 
 
+
 def help_button(update, context):
     query = update.callback_query
     mod_match = re.match(r"help_module\((.+?)\)", query.data)
@@ -351,6 +352,9 @@ def help_button(update, context):
         # ensure no spinny white circle
         context.bot.answer_callback_query(query.id)
         # query.message.delete()
+
+    except BadRequest:
+        pass
 
     except BadRequest:
         pass
@@ -515,8 +519,7 @@ def MukeshRobot_Main_Callback(update: Update, context: CallbackContext):
 def Source_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "source_":
-        query.message.edit_caption(
-            text=f"""
+        query.message.edit_caption(f"""
 ||ᴀ sᴘᴇᴄɪᴀʟ ɢʀᴏᴜᴘ ᴍᴜsɪᴄ ᴛᴀɢɢᴇʀ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ||
 ||ᴊᴏɪɴ ᴏᴜʀ sᴜᴘᴘᴏʀᴛ [ʀᴇᴘᴏ](https://t.me/archbots)||
 """,
