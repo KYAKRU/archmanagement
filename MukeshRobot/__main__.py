@@ -417,11 +417,11 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
                     ],
                     [
                         InlineKeyboardButton(
-                            text="ᴅᴇᴠᴇʟᴏᴩᴇʀ", url=f"tg://user?id={OWNER_ID}"
+                            text="ᴅᴇᴠᴇʟᴏᴩᴇʀ", url=f"https://t.me/itszoney"
                         ),
                     ],
                     [
-                        InlineKeyboardButton(text="◁", callback_data="mukesh_"),
+                        InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="mukesh_"),
                     ],
                 ]
             ),
