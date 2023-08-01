@@ -269,7 +269,7 @@ def info(update: Update, context: CallbackContext):
         text += "\n\nᴛʜᴇ ᴅɪsᴀsᴛᴇʀ ʟᴇᴠᴇʟ ᴏғ ᴛʜɪs ᴜsᴇʀ ɪs <b>ɢᴏᴅ</b>.\n"
         disaster_level_present = True
     elif user.id in DEV_USERS:
-        text += "\n\nᴛʜɪs ᴜsᴇʀ ɪs ᴀ ᴍᴇᴍʙᴇʀ ᴏғ <b>ARCH NETWORK</b>.\n"
+        text += "\n\nᴛʜɪs ᴜsᴇʀ ɪs ᴀ ᴍᴇᴍʙᴇʀ ᴏғ <b>ᴀʀᴄʜ ɴᴇᴛᴡᴏʀᴋ</b>.\n"
         disaster_level_present = True
     elif user.id in DRAGONS:
         text += "\n\nᴛʜᴇ ᴅɪsᴀsᴛᴇʀ ʟᴇᴠᴇʟ ᴏғ ᴛʜɪs ᴜsᴇʀ ɪs <b>ᴅʀᴀɢᴏɴ</b>.\n"
@@ -323,10 +323,10 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "ʜᴇᴀʟᴛʜ", url=f"https://t.me/mukeshbotzone/90"
+                                "ʜᴇᴀʟᴛʜ", url=f"https://t.me/ArchBots/112"
                             ),
                             InlineKeyboardButton(
-                                "Dɪsᴀsᴛᴇʀ", url="https://t.me/mukeshbotzone/26"
+                                "Dɪsᴀsᴛᴇʀ", url="https://t.me/ArchBots/113"
                             ),
                         ],
                         [
@@ -349,10 +349,10 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "ʜᴇᴀʟᴛʜ", url="https://t.me/mukeshbotzone/90"
+                                "ʜᴇᴀʟᴛʜ", url="https://t.me/ArchBots/112"
                             ),
                             InlineKeyboardButton(
-                                "ᴅɪsᴀsᴛᴇʀ", url="https://t.me/mukeshbotzone/26"
+                                "ᴅɪsᴀsᴛᴇʀ", url="https://t.me/ArchBots/113"
                             ),
                         ],
                         [
@@ -491,7 +491,7 @@ def set_about_bio(update: Update, context: CallbackContext):
 
         if user_id == bot.id and sender_id not in DEV_USERS:
             message.reply_text(
-                "ᴜᴍᴍ... ʏᴇᴀʜ, ɪ ᴏɴʟʏ ᴛʀᴜsᴛ ᴍᴜᴋᴇsʜ ᴀssᴏᴄɪᴀᴛɪᴏᴍ ᴛᴏ sᴇᴛ ᴍʏ ʙɪᴏ."
+                "ᴜᴍᴍ... ʏᴇᴀʜ, ɪ ᴏɴʟʏ ᴛʀᴜsᴛ ᴀʀᴄʜ ɴᴇᴛᴡᴏʀᴋ ᴛᴏ sᴇᴛ ᴍʏ ʙɪᴏ."
             )
             return
 
